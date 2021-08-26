@@ -1,2 +1,2 @@
 # 8ball
-I'm just 4 fun
+Just 4 fun
