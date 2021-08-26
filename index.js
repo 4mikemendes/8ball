@@ -1,4 +1,3 @@
-import randomcolor from "randomcolor"
 
 const advice = [
     "If you’re good at something, never do it for free.",
@@ -11,3 +10,11 @@ const advice = [
 
 // generate random light colors:
     // adviceEye.style.backgroundColor = randomcolor({luminosity: 'light'})
+
+let shakeIT = document.getElementById("adviceBtn")
+shakeIT.addEventListener("click", function() {
+console.log("cliked")
+const randomColor = Math.floor(Math.random()*56)+955
+
+document.getElementById("container").style.background = "#" + randomColor
+})

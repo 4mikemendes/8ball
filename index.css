@@ -3,7 +3,15 @@
     padding: 0;
 }
 
-
+#triangle {
+       width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 157px solid red;
+    margin-top: 99px;
+    margin-left: 52px;
+}
 .container {
     background: hotpink;
     height: 100vh;
@@ -13,18 +21,40 @@
     align-items: center;
 }
 
+#num {
+       position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    padding: 0.5em;
+    margin-left: 34%;
+    margin-top: 4px;
+}
+
 .adviceEye {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: lightblue;
+    background: black;
     text-align: center;
     padding: 0.5em;
     position: relative;
 }
 
+.adviceEye:hover{
+  cursor: pointer;
+  /*    animation: shake 0.5s;
+  animation-iteration-count: infinite; */
+}
+h3{
+  font-size: 60px;
+}
 p {
+  color: white;
    position: absolute;
+   font-size: 60px;
    top: 50%;
    left: 50%;
    font-weight: 700;
@@ -40,4 +70,18 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(3px, 3px) rotate(0deg); }
+  10% { transform: translate(-3px, -4px) rotate(-1deg); }
+  20% { transform: translate(-5px, 0px) rotate(1deg); }
+  30% { transform: translate(5px, 4px) rotate(0deg); }
+  40% { transform: translate(1px, -3px) rotate(1deg); }
+  50% { transform: translate(-3px, 4px) rotate(-1deg); }
+  60% { transform: translate(-5px, 3px) rotate(0deg); }
+  70% { transform: translate(5px, 3px) rotate(-1deg); }
+  80% { transform: translate(-3px, -3px) rotate(1deg); }
+  90% { transform: translate(3px, 4px) rotate(0deg); }
+  100% { transform: translate(3px, -4px) rotate(-1deg); }
 }
