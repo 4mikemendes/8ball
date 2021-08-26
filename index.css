@@ -12,7 +12,7 @@
     margin-top: 79px;
     margin-left: 49px;
 } */
-shake {
+/* shake {
    animation: shake 5s;
     animation-duration: 3s;
     width: 0;
@@ -22,7 +22,7 @@ shake {
     border-bottom: 233px solid red;
     margin-top: -2px;
     margin-left: 21px;
-}
+} */
 .container {
     background: hotpink;
     height: 100vh;
@@ -56,11 +56,6 @@ position: absolute;
 
 }
 
-.adviceEye:hover{
-  cursor: pointer;
-  /*    animation: shake 0.5s;
-  animation-iteration-count: infinite; */
-}
 h3{
   font-size: 40px;
 }
@@ -73,6 +68,11 @@ p {
    font-weight: 700;
    transform: translate(-50%, -50%);
 }
+h6 {
+    font-size: 19px;
+    color: antiquewhite;
+    margin: 10px;
+}
 
 button {
     border: none;
@@ -83,6 +83,10 @@ button {
 
 button:hover {
     cursor: pointer;
+     &#num  {
+     animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 }
 
 @keyframes shake {

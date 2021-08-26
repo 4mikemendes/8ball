@@ -18,6 +18,7 @@ const randomColor = Math.floor(Math.random()*56)+955
 document.getElementById("container").style.background = "#" + randomColor
 const randomElement = advice[Math.floor(Math.random() * advice.length)]
 document.getElementById("adviceDisplay").innerHTML = randomElement
+document.getElementById('myInput').value = ''
 
 })
 
