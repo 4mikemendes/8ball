@@ -3,14 +3,25 @@
     padding: 0;
 }
 
-#triangle {
-       width: 0;
+/* #triangle {
+    width: 0;
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 157px solid red;
-    margin-top: 99px;
-    margin-left: 52px;
+    border-bottom: 183px solid red;
+    margin-top: 79px;
+    margin-left: 49px;
+} */
+shake {
+   animation: shake 5s;
+    animation-duration: 3s;
+    width: 0;
+    height: 0;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 233px solid red;
+    margin-top: -2px;
+    margin-left: 21px;
 }
 .container {
     background: hotpink;
@@ -19,18 +30,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 #num {
-       position: absolute;
-    width: 70px;
-    height: 70px;
+position: absolute;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: white;
     text-align: center;
     padding: 0.5em;
-    margin-left: 34%;
-    margin-top: 4px;
+    margin-left: 37%;
+    margin-top: 1px;
 }
 
 .adviceEye {
@@ -41,6 +53,7 @@
     text-align: center;
     padding: 0.5em;
     position: relative;
+
 }
 
 .adviceEye:hover{
@@ -49,13 +62,13 @@
   animation-iteration-count: infinite; */
 }
 h3{
-  font-size: 60px;
+  font-size: 40px;
 }
 p {
   color: white;
    position: absolute;
-   font-size: 60px;
-   top: 50%;
+   font-size: 26px;
+   top: 57%;
    left: 50%;
    font-weight: 700;
    transform: translate(-50%, -50%);
@@ -84,4 +97,14 @@ button:hover {
   80% { transform: translate(-3px, -3px) rotate(1deg); }
   90% { transform: translate(3px, 4px) rotate(0deg); }
   100% { transform: translate(3px, -4px) rotate(-1deg); }
+}
+
+
+@keyframes move {
+   0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }

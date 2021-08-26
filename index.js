@@ -15,6 +15,10 @@ let shakeIT = document.getElementById("adviceBtn")
 shakeIT.addEventListener("click", function() {
 console.log("cliked")
 const randomColor = Math.floor(Math.random()*56)+955
-
 document.getElementById("container").style.background = "#" + randomColor
+const randomElement = advice[Math.floor(Math.random() * advice.length)]
+document.getElementById("adviceDisplay").innerHTML = randomElement
+
 })
+
+
