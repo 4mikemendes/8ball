@@ -3,26 +3,13 @@
     padding: 0;
 }
 
-/* #triangle {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 183px solid red;
-    margin-top: 79px;
-    margin-left: 49px;
-} */
-shake {
-   animation: shake 5s;
-    animation-duration: 3s;
-    width: 0;
-    height: 0;
-    border-left: 130px solid transparent;
-    border-right: 130px solid transparent;
-    border-bottom: 233px solid red;
-    margin-top: -2px;
-    margin-left: 21px;
+#triangle {
+  opacity: 1;
+  transition: 1s opacity;
+  text-align: center;
+  font-size:32px;
 }
+
 .container {
     background: hotpink;
     height: 100vh;
@@ -56,11 +43,17 @@ position: absolute;
 
 }
 
-.adviceEye:hover{
-  cursor: pointer;
-  /*    animation: shake 0.5s;
-  animation-iteration-count: infinite; */
+h1 {
+margin-bottom: 36px;
+    font-size: 38px;
 }
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 h3{
   font-size: 40px;
 }
@@ -73,6 +66,11 @@ p {
    font-weight: 700;
    transform: translate(-50%, -50%);
 }
+h6 {
+    font-size: 19px;
+    color: #504029;
+    margin: 10px;
+}
 
 button {
     border: none;
@@ -81,30 +79,3 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
-@keyframes shake {
-  0% { transform: translate(3px, 3px) rotate(0deg); }
-  10% { transform: translate(-3px, -4px) rotate(-1deg); }
-  20% { transform: translate(-5px, 0px) rotate(1deg); }
-  30% { transform: translate(5px, 4px) rotate(0deg); }
-  40% { transform: translate(1px, -3px) rotate(1deg); }
-  50% { transform: translate(-3px, 4px) rotate(-1deg); }
-  60% { transform: translate(-5px, 3px) rotate(0deg); }
-  70% { transform: translate(5px, 3px) rotate(-1deg); }
-  80% { transform: translate(-3px, -3px) rotate(1deg); }
-  90% { transform: translate(3px, 4px) rotate(0deg); }
-  100% { transform: translate(3px, -4px) rotate(-1deg); }
-}
-
-
-@keyframes move {
-   0%{
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100%{
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
